@@ -1,0 +1,340 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(128, 128, 128, 0.653);
+}
+
+header>h2 {
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.756);
+    width: 70%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.navbar>p {
+    padding-right: 30px;
+    color: white;
+}
+
+.navbar>p:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* main section  */
+
+.hero-section {
+    width: 100%;
+    height: 440px;
+    background-image: url("hero.png");
+}
+
+.content {
+    padding: 80px;
+}
+
+.content>p {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.content>h1 {
+    margin-bottom: 20px;
+    color: rgb(1, 78, 1);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.content>button {
+    background-color: rgb(1, 78, 1);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    font-weight: bolder;
+}
+
+/* about section  */
+
+.about-section {
+    background-color: #1a3636e7;
+    height: 650px;
+    width: 100%;
+}
+
+.about-section>h2 {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.724);
+    padding: 30px;
+}
+
+.about-section>div>img {
+    height: 450px;
+    width: 350px;
+}
+
+.about-section>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding-left: 150px;
+    gap: 100px;
+}
+
+.about-section>div>p {
+    color: rgba(255, 255, 255, 0.655);
+}
+
+/* featured recipies section  */
+.recipies-section {
+    width: 100%;
+    height: 650px;
+    background-color: #163434;
+}
+
+.recipies-section>h2 {
+    color: rgba(255, 255, 255, 0.724);
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.f-container {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+}
+
+.f-container>div {
+    height: 230px;
+    width: 230px;
+    border: 1px solid white;
+}
+
+.f-container>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3C7D6;
+    height: 110px;
+    gap: 7px;
+    margin-top: 60px;
+    opacity: 0;
+}
+.f-container>div>div:hover{
+    opacity: 1;
+}
+
+.f-container>div>div>button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #112d2d;
+    color: rgba(255, 255, 255, 0.724);}
+
+#r1 {
+    background-image: url("./r1.png");
+}
+
+#r2 {
+    background-image: url("./r2.png");
+}
+
+#r3 {
+    background-image: url("./r3.png");
+}
+
+#r4 {
+    background-image: url("./r4.png");
+}
+
+#r5 {
+    background-image: url("./r5.png");
+}
+
+#r6 {
+    background-image: url("./r6.png");
+}
+
+#r7 {
+    background-image: url("./r7.png");
+}
+
+#r8 {
+    background-image: url("./r8.png");
+}
+
+
+/* categories-section */
+
+.categories-section {
+    width: 100%;
+    height: 450px;
+    background-color: #1a3636e7;
+}
+
+.categories-section>h2 {
+    color: rgba(255, 255, 255, 0.724);
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.c-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.c-container>div {
+    height: 250px;
+    width: 250px;
+    border: 4px solid rgba(255, 255, 255, 0.724);
+    border-radius: 50%;
+}
+
+#i1 {
+    background-image: url("./baking.png");
+}
+
+#i2 {
+    background-image: url("./desserts.png");
+}
+
+#i3 {
+    background-image: url("./healthyeats.png");
+}
+
+#i4 {
+    background-image: url("./maincourse.png");
+}
+
+.c-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+
+.c-imgs>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    background-color: #A3C7D6;
+    height: 100px;
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.724);
+    border-top: none;
+    border-bottom: none;
+    opacity: 0;
+}
+
+.c-imgs>div button {
+    height: 28px;
+    width: 100px;
+    background-color: #112d2d;
+    color: rgba(255, 255, 255, 0.724);
+    border: none;
+}
+
+.c-imgs>div:hover {
+    opacity: 1;
+}
+
+/* contact section  */
+.contact-section {
+    height: 430px;
+    width: 100%;
+    background-color: #163434;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact-container>div {
+    width: 30%;
+}
+
+.contact-container p {
+    color: rgba(255, 255, 255, 0.724);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-info>p {
+    padding: 5px;
+}
+
+.contact-form>p {
+    padding: 5px;
+}
+
+.contact-form>input {
+    width: 100%;
+    height: 20px;
+}
+
+.contact-form>button {
+    margin-top: 6px;
+    padding: 3px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #112d2d;
+    color: rgba(255, 255, 255, 0.724);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.icons>i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.724);
+}
+
+.contact-section>h5 {
+    text-align: center;
+    margin: 7px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.724);
+}
