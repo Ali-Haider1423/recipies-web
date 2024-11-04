@@ -18,10 +18,23 @@
     <header>
         <h2>Favoursome Recipies</h2>
         <div class="navbar">
-            <p>Home</p>
-            <p>About</p>
-            <p>Recipies</p>
-            <p>Categories</p>
+            <p class="hideitem">Home</p>
+            <p class="hideitem">About</p>
+            <p class="hideitem">Recipies</p>
+            <p class="hideitem">Categories</p>
+            <p class="nav-bars" onclick="showsidebar()"><i class="fa-solid fa-bars"></i></p>
+        </div>
+
+
+
+        <div class="sidebar">
+            <div>
+                <i class="fa-solid fa-x" onclick="hidesidebar()"></i>
+                <p>Home</p>
+                <p>About</p>
+                <p>Recipies</p>
+                <p>Categories</p>
+            </div>
         </div>
     </header>
 
@@ -35,25 +48,29 @@
             </div>
         </div>
 
-        <div class="about-section">
+        <!-- <div class="about-section">
             <h2>About us</h2>
             <div>
                 <img src="./20 Indian Thali Ideas.png">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aspernatur in deserunt laboriosam
-                    officia perspiciatis recusandae saepe ab possimus corporis, repellat cupiditate quidem culpa ipsa
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aspernatur in deserunt
+                    laboriosam
+                    officia perspiciatis recusandae saepe ab possimus corporis, repellat cupiditate quidem culpa
+                    ipsa
                     expedita esse. Quasi necessitatibus harum nam eos nihil fuga, voluptates quam cum vel amet rerum
                     incidunt cupiditate alias inventore! Suscipit eveniet, hic quibusdam voluptate cum sapiente,
                     necessitatibus delectus iure ab laboriosam quae impedit recusandae aliquam molestiae tenetur qui
                     quas, minima repellendus consequuntur quisquam libero quidem nihil. Libero error, necessitatibus
-                    esse nemo placeat sequi vel eligendi tempora asperiores voluptates harum earum, qui, aspernatur sunt
+                    esse nemo placeat sequi vel eligendi tempora asperiores voluptates harum earum, qui, aspernatur
+                    sunt
                     optio facilis corrupti aut nihil officiis quam eos ipsum provident sint! Quis delectus sequi
                     recusandae possimus iusto obcaecati velit cum aut ducimus quod voluptates vel quasi praesentium,
                     nesciunt ratione voluptatem doloremque laborum necessitatibus quos ut hic commodi eius. Ex earum
                     expedita eos, alias voluptatibus quis cumque dolore sed similique fugiat veritatis nihil
-                    perspiciatis necessitatibus hic eum, amet quaerat dignissimos voluptate, quisquam totam? Obcaecati
+                    perspiciatis necessitatibus hic eum, amet quaerat dignissimos voluptate, quisquam totam?
+                    Obcaecati
                     error magni ea accusamus dolorum, sint, debitis </p>
             </div>
-        </div>
+        </div> -->
 
         <div class="recipies-section">
             <h2>Featured Recipies</h2>
@@ -196,6 +213,17 @@
         </div>
 
     </footer>
+
+    <script>
+        function showsidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
 
 </body>
 
